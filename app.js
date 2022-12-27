@@ -44,7 +44,7 @@ const url =  "https://us11.api.mailchimp.com/3.0/lists/10f6252327"
 
 const options = {
   method: "POST",
-  auth: "gresky:dcc0598529792bbd4845f358995fa7f3-us11"
+  auth: "gresky:571bcd32799fdc68b57ff52c3dc63c24-us11"
 }
 
 const request = https.request(url, options, function(response) {
@@ -85,7 +85,7 @@ app.listen(port, function() {
 
 
 // APIkey
-// dcc0598529792bbd4845f358995fa7f3-us11
+// 571bcd32799fdc68b57ff52c3dc63c24-us11
 
 // LIST id
 //  10f6252327
