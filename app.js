@@ -44,7 +44,7 @@ const url =  "https://us11.api.mailchimp.com/3.0/lists/10f6252327"
 
 const options = {
   method: "POST",
-  auth: "gresky:571bcd32799fdc68b57ff52c3dc63c24-us11"
+  auth: "gresky:0664c46a3358abf4d6ce780bd81f34f6-us11"
 }
 
 const request = https.request(url, options, function(response) {
