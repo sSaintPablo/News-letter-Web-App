@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
+
 
 
 
@@ -42,9 +44,11 @@ const jsonData = JSON.stringify(data);
 
 const url =  "https://us11.api.mailchimp.com/3.0/lists/10f6252327"
 
+const key = process.env.APIKEY
+
 const options = {
   method: "POST",
-  auth: "gresky:571bcd32799fdc68b57ff52c3dc63c24-us11"
+  auth: "gresky:" + key
 }
 
 const request = https.request(url, options, function(response) {
